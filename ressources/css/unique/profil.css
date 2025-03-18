@@ -1,0 +1,34 @@
+section {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+article {
+  padding: 0px 20px;
+}
+
+.top {
+  background: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  padding: 20px 0px;
+  border-bottom: 1px solid #000000;
+}
+
+.top img {
+  height: 100px;
+  width: 100px;
+}
+
+.description {
+  padding: 10px 0px;
+}
+
+.description p{
+  text-align: justify;
+}

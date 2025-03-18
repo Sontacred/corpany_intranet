@@ -1,0 +1,85 @@
+----------------------------------------------------------------------------------
+
+@ - Adapter les exigences suivantes : 
+
+- nom de la BDD : corpany_project_intranet
+
+- TABLE utilisateur : identifiant (id), mot de passe (password)
+
+- TABLE groupe : identifiant (id), libellé (lib)
+
+----------------------------------------------------------------------------------
+
+@ - Corrections et ajouts à apporter :
+
+- modifier les utilisateurs
+
+- supprimer les utilisateurs
+
+- rendre l'agenda fonctionnel
+
+- rendre l'actualité fonctionnelle
+
+- (permettre de choisir une photo de profil)
+
+----------------------------------------------------------------------------------
+
+@ - Penser à ajuster le chemin d'accès des pages sur la vraie version de l'intranet :
+
+----------------------------------------------------------------------------------
+
+@ - Ajouter ce code au début de chaque page qui nécessite d'être connecté
+
+>>> PHP
+
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php"); // Redirige vers la connexion si non connecté
+    exit;
+}
+?>
+
+<<< PHP
+
+----------------------------------------------------------------------------------
+
+@ - Créer la base de données dans Mysql :
+
+>>> SQL
+
+CREATE DATABASE corpany_project_intranet;
+USE corpany_project_intranet;
+
+<<< SQL
+
+
+----------------------------------------------------------------------------------
+
+@ - Créer la Table des utilisateurs :
+
+>>> SQL
+
+CREATE TABLE utilisateur (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL, -- Stockage en clair (dangereux en prod)
+    role ENUM('administrateur', 'ressources_humaines', 'logistique', 'informatique', 'employe') NOT NULL DEFAULT 'employe'
+);
+
+<<< SQL
+
+----------------------------------------------------------------------------------
+
+@ - Insertion de valeur directement depuis MySQL
+(Il est préférable directement depuis register.php)
+
+>>> SQL
+
+INSERT INTO `utilisateur`(`id`, `username`, `email`, `password`, `role`)
+VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')
+
+<<< SQL
+
+----------------------------------------------------------------------------------

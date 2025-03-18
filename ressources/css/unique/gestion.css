@@ -1,0 +1,71 @@
+.user {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    margin: 0px 20px;
+    padding: 10px 10px;
+    border-top: 1px solid #000000;
+}
+
+.user img {
+    height: 30px;
+    width: 30px;    
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+}
+
+.name h2 {
+    margin-left: 6px;
+}
+
+.infos {
+    text-align: left;
+    width: 250px;
+}
+
+
+/* boutons de gestion des profils */
+
+.action-btn input {
+    padding: 6px 8px;
+    border-radius: 100px;
+    transition: 150ms;
+}
+
+/* boutons MODIFIER */
+
+
+.action-btn #modifier {
+    background: #7a7a7a55;
+    border: 1px solid #7a7a7a;
+    transition: 150ms;
+}
+
+.action-btn #modifier:hover {
+    background: #7a7a7a;
+    color: #ffffff;
+    border: 1px solid #7a7a7a;
+    transition: 150ms;
+}
+
+/* boutons SUPPRIMER */
+
+.action-btn #supprimer {
+    background: #e73f5055;
+    border: 1px solid #e73f50;
+    transition: 150ms;
+}
+
+.action-btn #supprimer:hover {
+    background: #e73f50;
+    color: #ffffff;
+    transition: 150ms;
+}

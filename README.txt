@@ -14,4 +14,4 @@ README officiel de l'intranet conçu pour l'entreprise corpany
 
 ...
 
-========== informations sur le projet
+========== 

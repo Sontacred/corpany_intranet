@@ -1,5 +1,13 @@
 ===== README officiel de l'intranet conçu pour l'entreprise corpany ===== 
 -
 -
+=== prblèmes encore à corriger ===
 -
-mettre du contenu (un jour)
+- - modification des utilisateurs
+- - supression des utilisateurs
+- - page de calendrier
+- - page des actualités
+- - créer la table des groupes et la lier à la table des utilisateurs
+-
+=== 
+

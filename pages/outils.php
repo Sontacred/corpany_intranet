@@ -86,10 +86,6 @@ $role = $_SESSION['role']; // Récupère le rôle de l'utilisateur
             <h2>Création de profils</h2>
             <i class="fa-solid fa-lock"></i>
           </a>
-          <a href="authentification/delete.php" class="outils">
-            <h2>Supression de profils</h2>
-            <i class="fa-solid fa-lock"></i>
-          </a>
         <?php endif; ?>
       </article>
     </section>
@@ -98,22 +94,6 @@ $role = $_SESSION['role']; // Récupère le rôle de l'utilisateur
     <footer>
       <div class="footer-link">
         <div class="reseaux">
-          <a href="#">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            social
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            social
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            social
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            social
-          </a>
           <a href="footer/information.php">
             <i class="fa-solid fa-circle-info"></i>
             information

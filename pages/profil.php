@@ -88,22 +88,6 @@ if (!isset($_SESSION['user_id'])) {
     <footer>
       <div class="footer-link">
         <div class="reseaux">
-          <a href="#">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            social
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            social
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            social
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            social
-          </a>
           <a href="footer/information.php">
             <i class="fa-solid fa-circle-info"></i>
             information

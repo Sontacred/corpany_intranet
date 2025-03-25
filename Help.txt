@@ -56,7 +56,7 @@ USE corpany_project_intranet;
 
 ----------------------------------------------------------------------------------
 
-@ - Créer la Table des utilisateurs :
+@ - Créer la Table utilisateurs :
 
 >>> SQL
 
@@ -71,6 +71,35 @@ CREATE TABLE utilisateur (
 <<< SQL
 
 ----------------------------------------------------------------------------------
+
+@ - Créer la Table event :
+
+>>> SQL
+
+CREATE TABLE event (
+####################
+####################
+####################
+);
+
+<<< SQL
+
+----------------------------------------------------------------------------------
+
+@ - Créer la Table des  actualité :
+
+>>> SQL
+
+CREATE TABLE actulite (
+#######################
+#######################
+#######################
+);
+
+<<< SQL
+
+----------------------------------------------------------------------------------
+
 
 @ - Insertion de valeur directement depuis MySQL
 (Il est préférable directement depuis register.php)

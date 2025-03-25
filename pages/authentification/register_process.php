@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!empty($username) && !empty($email) && !empty($password)) {
         $stmt = $pdo->prepare("INSERT INTO utilisateur (username, email, password, role) VALUES (?, ?, ?, ?)");
         if ($stmt->execute([$username, $email, $password, $role])) {
-            echo "Inscription réussie. <a href='login.php'>Se connecter</a><br/>";
+            echo "Inscription réussie. <a href='../outils.php'>Retourner aux outils</a><br/>";
         } else {
             echo "Erreur lors de l'inscription.";
         }
